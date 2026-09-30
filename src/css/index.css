@@ -1,3 +1,62 @@
-p{
-    color: red;
+/* without ai and google  3 box  */
+
+header{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border: 1px solid black;
+    background-color: aquamarine;   
+}
+
+.logo{
+height: 100%;
+width: 200px;   
+}
+
+
+nav{
+    height: 100%;
+    width: 200px;
+    flex-grow: 1;
+}
+nav a{    
+    display: flex;
+    align-items: center;            
+    justify-content: center;        
+    height: 100%;
+  padding-left: 35px;
+  padding-right: 10px;
+
+}
+
+h6{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: cornflowerblue;
+text-align: center;
+
+}
+
+h5{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: cornflowerblue;
+text-align: center;
+}
+
+h4{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: cornflowerblue;
+text-align: center;
+
+
+}
+ul{
+    
+    display: flex;
+    /* padding-left: 10px; */
+    justify-self: end;
+}
+main{
+    height: 400px;
+    width: 100%;
+    border: 1px solid black;
 }
