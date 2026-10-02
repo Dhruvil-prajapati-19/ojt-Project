@@ -11,11 +11,11 @@
 }
 
 /* Background images for destination cards */
-/* .dest-pic1 { background-image: url('/assets/images/bali.jpg'); }
-.dest-pic2 { background-image: url('/assets/images/switzerland.jpg'); }
-.dest-pic3 { background-image: url('/assets/images/paris.jpg'); }
+.dest-pic1 { background-image: url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80'); }
+.dest-pic2 { background-image: url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80'); }
+.dest-pic3 { background-image: url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80'); }
 .dest-pic4 { background-image: url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80'); }
-.dest-pic5 { background-image: url('https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&w=600&q=80'); }
-.dest-pic6 { background-image: url('https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=600&q=80'); }
-.dest-pic7 { background-image: url('https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=600&q=80'); }
-.dest-pic8 { background-image: url('https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=600&q=80'); } */
+.dest-pic5 { background-image: url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80'); }
+.dest-pic6 { background-image: url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80'); }
+.dest-pic7 { background-image: url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80'); }
+.dest-pic8 { background-image: url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80'); }

@@ -213,21 +213,21 @@ h6 {
 
 .card2 .pic-card {
     height: 200px;
-    background-image: url(/assets/images/bali.jpg);
+    background-image: url(https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80);
     background-size: cover;
     background-position: center;
 }
 
 .card22 .pic-card {
     height: 200px;
-    background-image: url(/assets/images/switzerland.jpg);
+    background-image: url(https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80);
     background-size: cover;
     background-position: center;
 }
 
 .card23 .pic-card {
     height: 200px;
-    background-image: url(/assets/images/paris.jpg);
+    background-image: url(https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80);
     background-size: cover;
     background-position: center;
 }
