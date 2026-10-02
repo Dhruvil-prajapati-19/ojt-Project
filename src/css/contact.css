@@ -1,0 +1,148 @@
+main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+}
+
+.toptext {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.toptext h5 {
+    color: #4f46e5;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.toptext h4 {
+    color: #0f172a;
+    font-size: 28px;
+    margin: 0 0 8px 0;
+}
+
+.toptext h6 {
+    color: #64748b;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* 3 Cards Row */
+.info-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.box1, .box2, .box3 {
+    flex: 1;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.box1 { background-color: #eff6ff; }
+.box2 { background-color: #f0fdf4; }
+.box3 { background-color: #faf5ff; }
+
+.box1 i { color: #2563eb; font-size: 22px; margin-bottom: 10px; }
+.box2 i { color: #16a34a; font-size: 22px; margin-bottom: 10px; }
+.box3 i { color: #9333ea; font-size: 22px; margin-bottom: 10px; }
+
+.info-boxes h3 {
+    font-size: 16px;
+    color: #0f172a;
+    margin: 0 0 8px 0;
+}
+
+.info-boxes p {
+    font-size: 13px;
+    color: #475569;
+    margin: 0 0 5px 0;
+    line-height: 1.4;
+}
+
+.info-boxes span {
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+/* Contact Form Section */
+.contact-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-left {
+    flex: 1;
+}
+
+.form-left h5 {
+    color: #4f46e5;
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.form-left h4 {
+    font-size: 22px;
+    color: #0f172a;
+    margin: 0 0 6px 0;
+}
+
+.form-left h6 {
+    font-size: 13px;
+    color: #64748b;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+}
+
+/* Form Fields */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.row {
+    display: flex;
+    gap: 12px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 150px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.form-right {
+    flex: 1;
+}
+
+.form-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
