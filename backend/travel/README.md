@@ -68,6 +68,7 @@ pip install django Pillow
 Set up your SQLite database tables by running:
 
 ```bash
+python manage.py makemigrations  
 python manage.py migrate
 ```
 
