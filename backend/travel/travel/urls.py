@@ -21,15 +21,12 @@ from place.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',index,name="index"),
-    path('admin/', admin.site.urls),
     path('login/',login,name="login"),
     path('delete/<int:id>/',delete,name="delete"),
     path('update/<int:id>/',update,name="update"),
     # path('home/',home,name="home"),
-    path('about/',about,name="home"),
-    path('contact/',contact,name="home"),
-    path('destination/',destination,name="home"),
+    path('about/',about,name="about"),
+    path('contact/',contact,name="contact"),
+    path('destination/',destination,name="destination"),
     # path('home/',home,name="home"),
-
-
 ]

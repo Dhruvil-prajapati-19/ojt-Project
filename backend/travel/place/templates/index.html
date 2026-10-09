@@ -429,10 +429,10 @@ footer {
         </div>
         <nav>
         <ul>
-            <a href="{%%}">Home</a>
-            <a href="about.html">About</a>
-            <a href="destination.html">destination</a>
-            <a href="contact.html">contact</a>
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'destination' %}">destination</a>
+            <a href="{% url 'contact' %}">contact</a>
         </ul>
             <a href="login.html"><button>login</button></a>
         </nav>
