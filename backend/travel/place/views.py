@@ -48,5 +48,7 @@ def contact(request):
     return render(request,'contact.html')
 
 def destination(request):
-    return render(request,'destination.html')
+    cards = card.objects.all()
+
+    return render(request,'destination.html',{'cards': cards})
 
