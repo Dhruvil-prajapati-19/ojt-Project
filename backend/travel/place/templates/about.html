@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/index.css">
+    <link rel="stylesheet" href="/src/css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>traveling website</title>
+    <style>
+
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    background-color: #f8fafc;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 46px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.logo span {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1e3a8a;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    margin-left: 60px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #334155;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 6px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+
+nav a.active {
+    color: #2563eb;
+    border-bottom: 3px solid #2563eb;
+}
+
+
+nav button {
+    background: linear-gradient(135deg, #4f46e5, #3b82f6);
+    color: #ffffff;
+    border: none;
+    padding: 10px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    transition: opacity 0.2s ease;
+}
+
+nav button:hover {
+    opacity: 0.9;
+}
+
+h6{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: cornflowerblue;
+text-align: center;
+
+}
+
+h5{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: cornflowerblue;
+text-align: center;
+}
+
+h4{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: cornflowerblue;
+text-align: center;
+}
+
+
+main {
+    width: 100%;
+    padding: 60px 80px;
+    box-sizing: border-box;
+    background-color: #f8fafc;
+    font-family: Arial, sans-serif;
+}
+
+
+.text1, .text2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.text2 {
+    margin-top: 60px;
+}
+
+h5 {
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #4f46e5;
+    margin: 0 0 10px 0;
+}
+
+h4 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 10px 0;
+}
+
+h6 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #64748b;
+    margin: 0;
+}
+
+.card1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+    flex: 1;
+    height: 140px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+  
+}
+
+.box1 { background-color: #fef9c3; color: #854d0e; }
+.box2 { background-color: #e0f2fe; color: #0369a1; }
+.box3 { background-color: #f3e8ff; color: #6b21a8; }
+.box4 { background-color: #dcfce7; color: #15803d; }
+.box5 { background-color: #ffe4e6; color: #be123c; }
+.box6 { background-color: #ccfbf1; color: #0f766e; }
+
+.card1 i {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.card1 p {
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0 0 4px 0;
+}
+
+.card1 span {
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+
+.allmycards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+.card2, .card22, .card23 {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.card2 .pic-card {
+    height: 200px;
+    background-image: url(https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+.card22 .pic-card {
+    height: 200px;
+    background-image: url(https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+.card23 .pic-card {
+    height: 200px;
+    background-image: url(https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.pic-text {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.pic-text h3 {
+    margin: 0 0 6px 0;
+    font-size: 20px;
+    color: #0f172a;
+}
+
+.pic-text .location {
+    font-size: 13px;
+    color: #64748b;
+    margin: 0 0 12px 0;
+}
+
+.pic-text .desc {
+    font-size: 13px;
+    color: #475569;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+}
+
+
+.price-box {
+    background-color: #eff6ff;
+    padding: 12px 16px;
+    border-radius: 12px;
+    margin-top: auto;
+}
+
+.price-box span {
+    display: block;
+    font-size: 11px;
+    color: #64748b;
+}
+
+.price-box strong {
+    font-size: 20px;
+    color: #1d4ed8;
+}
+
+.price-box strong span {
+    display: inline;
+    font-size: 12px;
+    font-weight: 400;
+    color: #64748b;
+}
+
+
+.center-btn {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 30px;
+    border: 1px solid #2563eb;
+    border-radius: 30px;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+
+
+.banner {
+    width: 100%;
+    min-height: 500px;
+    background-image: url(/assets/images/banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 80px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.bannercontain {
+    max-width: 550px;
+    color: black;
+    text-align: left;
+}
+
+
+.bannercontain ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.bannercontain li {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: black;
+    display: flex;
+    align-items: center;
+  
+}
+
+
+.bannercontain h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 15px 0;
+    color: black;
+}
+
+.bannercontain h1 span {
+    color: darkblue;
+}
+
+
+.bannercontain button {
+    background: linear-gradient(135deg, #4f46e5, #3b82f6);
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+    /* transition: transform 0.2s ease, box-shadow 0.2s ease; */
+}
+
+
+footer {
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 40px 60px 20px 60px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-child1 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr 1fr;
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+.footer-brand-logo img {
+    width: 32px;
+    height: 32px;
+}
+
+
+.lui {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.lui a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.sbox1, .xbox2, .xbox3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    gap: 40px;
+}
+
+.leftpic, .rightpic {
+    width: 48%;
+    height: 280px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sbox1 .leftpic {
+    background-image: url("https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80");
+}
+
+.xbox2 .rightpic {
+    background-image: url("https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80");
+}
+
+.xbox3 .leftpic {
+    background-image: url("https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80");
+}
+
+.lefttext, .righttext {
+    width: 48%;
+}
+
+.lefttext h5, .righttext h5 {
+    color: #3b82f6;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.lefttext h4, .righttext h4 {
+    color: #1e293b;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.lefttext p, .righttext p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.bottombar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f7ff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.smallbox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.smallbox i {
+    background-color: #dbeafe;
+    color: #2563eb;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.smallbox p {
+    color: #334155;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+}
+    </style>
+</head>
+<body>
+        <header>
+        <div class="logo"> 
+        <img src="/assets/images/ward.webp" width="50px" height="50px">
+        </div>
+        <nav>
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="destination.html">destination</a>
+            <a href="contact.html">contact</a>
+        </ul>
+            <a href="login.html"><button>login</button></a>
+        </nav>
+    </header>
+    <div class="banner">
+    <div class="bannercontain">
+        <ul>
+            <li>About Us</li>
+        </ul>
+        
+        <h1>We are <span>More</span> than <br> Just a <span>Travel Company</span> </h1>
+        
+        <p>Explore breathtaking places, experience new cultures<br>and create memories that last a lifetime.</p>
+
+        <button>Explore Destination <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+</div>
+<main>
+    <div class="sbox1">
+        <div class="leftpic"></div>
+        <div class="righttext">
+            <h5>OUR STORY</h5>
+            <h4>How It All Started</h4>
+            <p>Wanderly was born from a simple idea — to make travel more accessible, more personal and more memorable. What started as a small passion project among friends has now grown into a platform that helps thousands of travelers explore the world with confidence and ease.</p>
+        </div>
+    </div>
+
+    <div class="xbox2">
+        <div class="lefttext">
+            <h5>OUR MISSION</h5>
+            <h4>Building Better Travel Experiences</h4>
+            <p>Our mission is to inspire people to step out of their comfort zones and discover new cultures, places and perspectives. We believe travel isn't just about visiting new places, it's about creating stories that last a lifetime.</p>
+        </div>
+        <div class="rightpic"></div>
+    </div>
+
+    <div class="xbox3">
+        <div class="leftpic"></div>
+        <div class="righttext">
+            <h5>WHY CHOOSE US</h5>
+            <h4>Your Journey, Our Priority</h4>
+            <p>From handpicked destinations to trusted local guides, we take care of every detail so you can focus on what matters most — exploring. With 24/7 support, flexible packages and a passion for travel, we're here to make your journey smooth, safe and unforgettable.</p>
+        </div>
+    </div>
+
+    <div class="bottombar">
+        <div class="smallbox">
+            <i class="fa-solid fa-compass"></i>
+            <p>Handpicked Destinations</p>
+        </div>
+        <div class="smallbox">
+            <i class="fa-solid fa-shield-halved"></i>
+            <p>Safe & Reliable Travel</p>
+        </div>
+        <div class="smallbox">
+            <i class="fa-solid fa-user-group"></i>
+            <p>Expert Guides</p>
+        </div>
+        <div class="smallbox">
+            <i class="fa-solid fa-heart"></i>
+            <p>Unforgettable Experiences</p>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-child1">
+       <!-- logo -->
+        <div class="footer-brand-logo">
+            <div class="logo-container">
+                <img src="/assets/images/ward.webp" alt="Wanderly logo">
+                <span>Wanderly</span>
+            </div>
+            <p>Your Journey, Our Passion.</p>
+        </div>
+
+        <div class="links">
+            <h3>Useful Links</h3>
+            <ul class="lui">
+                <li class="lui"><a href="index.html">Home</a></li>
+                <li class="lui"><a href="about.html">About</a></li>
+                <li class="lui"><a href="destinations.html">Destinations</a></li>
+                <li class="lui"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="contactus">
+            <h3>Contact Us</h3>
+            <ul class="links">
+                <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street, New York, NY 10001</li>
+                <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                <li><i class="fas fa-envelope"></i> hello@wanderly.com</li>
+            </ul>
+        </div>
+
+    
+        <div class="contactus">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-x-twitter"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p><i class="fa-solid fa-copyright"></i> 2025 Wanderly. All rights reserved.</p>
+        <div class="footer-bottom-links">
+            <span>Explore</span> <span>Discover</span>  <span>Travel</span>
+        </div>
+    </div>
+</footer> 
+</body>
+</html>

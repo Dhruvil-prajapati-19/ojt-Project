@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>traveling website backend</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+<body>
+
+    <!-- Header-->
+    <header>
+        <div class="header-logo">
+            <i class="fa-solid fa-plane-departure"></i> Traveling Admin page
+        </div>
+        <div class="user">
+            <span>admin</span>
+            <i class="fa-solid fa-circle-user"></i>
+        </div>
+    </header>
+
+<main>
+        <!-- Sidebar -->
+    <div class="sidebar">
+            <div class="sidebar-logo">
+                <i class="fa-solid fa-compass"></i>
+                <h2>teavel</h2>
+            </div>
+            <nav>
+                <h3>Admin Menu</h3>
+                <a href="index.html"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+            </nav>
+        </div>
+
+    <!-- main contain -->
+<div class="main-contain">
+    <!-- <div class="container"> -->
+            <form action="#" method="POST">
+                <h2>Add Destination Card</h2>
+                
+                <label>ID</label>
+                <input type="number" name="id" placeholder="1" required>
+
+                <label>City / State</label>
+                <input type="text" name="city_state" placeholder="Bali" required>
+
+                <label>Country</label>
+                <input type="text" name="country" placeholder="Indonesia" required>
+
+                <label>Tag / Category</label>
+                <select name="tag">
+                    <option value="state_city">State/City</option>
+                    <option value="mountain">Mountain</option>
+                    <option value="paris">Paris</option>
+                    <option value="island">Island</option>
+                    <option value="cultural">Cultural</option>
+                    <option value="history">History</option>
+                    <option value="country">Country</option>
+                </select>
+
+                <label>Price ($)</label>
+                <input type="number" name="price" placeholder="499" required>
+
+                <label>Description</label>
+                <textarea name="description" rows="3" placeholder="Enter card description..."></textarea>
+
+                <label>Image URL</label>
+                <input type="text" name="img" placeholder="https://example.com/image.jpg">
+
+                <button type="submit">Save Card</button>
+            </form>
+    <!-- </div> -->
+            <div class="table">
+                <h2>Card Table List</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>City / State</th>
+                            <th>Country</th>
+                            <th>Tag</th>
+                            <th>Price</th>
+                            <th>Description</th>
+                            <th>Image</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Bali</td>
+                            <td>Indonesia</td>
+                            <td>Island</td>
+                            <td>$499</td>
+                            <td>Tropical paradise beaches</td>
+                            <td><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=50" alt="Bali"></td>
+                            <td>
+                                <button type="button" class="btn-edit"><i class="fa-solid fa-pen-to-square"></i> Edit</button>
+                                <button type="button" class="btn-delete"><i class="fa-solid fa-trash"></i> Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Zermatt</td>
+                            <td>Switzerland</td>
+                            <td>Mountain</td>
+                            <td>$799</td>
+                            <td>Swiss alpine views</td>
+                            <td><img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?w=50" alt="Swiss"></td>
+                            <td>
+                                <button type="button" class="btn-edit"><i class="fa-solid fa-pen-to-square"></i> Edit</button>
+                                <button type="button" class="btn-delete"><i class="fa-solid fa-trash"></i> Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

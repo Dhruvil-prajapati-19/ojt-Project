@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<style>
+main{
+    display: flex;
+    height: 250px;
+    width: 60%;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: large;
+    /* background-color: rgb(244, 252, 255); */
+    /* background-image: url(https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&q=80); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+
+
+
+form input, form select, form textarea {
+    width: 50%;
+    padding: 6px;
+    margin-top: 10px;
+    box-sizing: border-box; 
+    display: flex;
+    border-radius: 5px;
+}
+
+button {
+    background: linear-gradient(135deg, #4f46e5, #3b82f6);
+    color: #ffffff;
+    border: none;
+    padding: 10px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    transition: opacity 0.2s ease;
+    margin-top: 10px;
+    width: 25%;
+    position: relative;
+    left: 9.9%;
+
+}
+.container{
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    position: relative;
+    left:68%;
+    top: 50%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 46px;
+    height: 50px;
+    object-fit: contain;
+}
+
+
+</style>
+
+<body>
+    <!-- homework: new project 4 frontend pages, redirect -->
+    <main>
+    <div class="container">
+        <h2>welcome back!</h2>
+       
+        <form method="post" action="" enctype="multipart/form-data">
+        {% csrf_token %}
+        username: <input type="text" name="uname" id="uname"><br>
+        password: <input type="password" name="upass" id="upass"><br>
+        <button type="submit">submit</button><br>
+        <!-- <a>forgot the password?click to reset</a>   -->
+
+        <table>
+                    <tr>
+                    <th>seriesnumber</th>
+                    <th>usernmae</th>
+                    <th>password</th>
+                    <th>update</th>
+                    <th>delete</th>
+                    </tr>
+                {% for login in login %}
+                    <tr>
+                    
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ login.username }}</td>
+                    <td>{{ login.password }}</td>
+                    <td><a href="{% url 'delete' login.id %}">delete</a></td>
+                    <td><a href="{% url 'update' login.id %}">update</a></td>
+                   
+                </tr>
+             {% endfor %}
+        </table>
+    </form>
+    </div>
+    </main>
+</body>
+</html>
