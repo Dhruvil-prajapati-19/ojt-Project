@@ -21,11 +21,9 @@ Follow these simple step-by-step instructions to get the project running locally
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repository-name.git
-cd your-repository-name
+git clone https://github.com/Dhruvil-prajapati-19/ojt-Project.git
+cd ojt-Project/backend/travel
 ```
-
-*(Note: Navigate into the project directory containing `manage.py` if structured inside a subfolder: `cd backend/travel`)*
 
 ---
 
